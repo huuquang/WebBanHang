@@ -1,0 +1,294 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEDCB258-074A-4618-A023-45ED18F86C89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBanHang</RootNamespace>
+    <AssemblyName>WebBanHang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chantinh.html" />
+    <Content Include="california.html" />
+    <Content Include="hoamungkhaitruong.html" />
+    <Content Include="coimo.html" />
+    <Content Include="hopquavuongtruG510GA.html" />
+    <Content Include="hopquavuongtruG4999.html" />
+    <Content Include="hopquatronT01839.html" />
+    <Content Include="hopquatraitimTT9943.html" />
+    <Content Include="hopquatraitimdo.html" />
+    <Content Include="Images\chitietsanpham\hoakhaitruong\hoa-mung-khai-truong.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-trai-tim-do.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-trai-tim.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-tron-t01439.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-tt9943.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-vuong-cham-bi.jpg" />
+    <Content Include="Images\chitietsanpham\hopquatang\hop-qua-vuong-tru-g499.jpg" />
+    <Content Include="ngaycuaem.html" />
+    <Content Include="emdem.html" />
+    <Content Include="dieungot.html" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\california.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\chantinh.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\coimo.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\dieungot.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\duynhat.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\emdem.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\ngaycuaem.jpg" />
+    <Content Include="Images\chitietsanpham\hoasinhnhat\nuhongthongay.jpg" />
+    <Content Include="meque.html" />
+    <Content Include="motnhanhmai.html" />
+    <Content Include="duynhat.html" />
+    <Content Include="hopquahinhtraitim.html" />
+    <Content Include="nuhongthongay.html" />
+    <Content Include="ngayxanh.html" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\chan-tinh-hty1.jpg" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\dam-me1-600x600.jpg" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\giac-mo-lang-man-600x600.jpg" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\khuc-khai-hoan-hty1-600x600.jpg" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\special-love-hty-600x600.jpg" />
+    <Content Include="Images\chitietsanpham\hoa cuoi\trot-yeu-nguoi1-600x600.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\giotnangbenthem.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\meque.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\motnhanhmai.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\ngayxanh.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\taonha.jpg" />
+    <Content Include="Images\chitietsanpham\hoatangme\tinhyeulon.jpg" />
+    <Content Include="giotnangbenthem.html" />
+    <Content Include="taonha.html" />
+    <Content Include="tinhyeulon.html" />
+    <Content Include="trotyeunguoi.html" />
+    <Content Include="speciallove.html" />
+    <Content Include="khuckhaihoan.html" />
+    <Content Include="giacmolangman.html" />
+    <Content Include="damme.html" />
+    <Content Include="cart.html" />
+    <Content Include="account.html" />
+    <Content Include="Content\animations.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="hoakhaitruong.html" />
+    <Content Include="hopquatang.html" />
+    <Content Include="hoatinhyeu.html" />
+    <Content Include="hoasinhnhat.html" />
+    <Content Include="hoatangme.html" />
+    <Content Include="Images\back-top.png" />
+    <Content Include="Images\hang moi ve\hoa 1.jpg" />
+    <Content Include="Images\hang moi ve\hoa 2.jpg" />
+    <Content Include="Images\hang moi ve\hoa 3.jpg" />
+    <Content Include="Images\hang moi ve\hoa 4.jpg" />
+    <Content Include="Images\hang moi ve\hoa 5.jpg" />
+    <Content Include="Images\hang moi ve\hoa 6.jpg" />
+    <Content Include="Images\hang moi ve\hoa 7.jpg" />
+    <Content Include="Images\hang moi ve\hoa 8.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa tuoi.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa sinh nhat.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa khai truong.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa tang me.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa cưới.jpg" />
+    <Content Include="Images\chu de yeu thich\hoa tinh yeu.jpg" />
+    <Content Include="Images\hinh-nen-hoa-may-tinh-hoa-hong-5.jpg" />
+    <Content Include="Images\hoa cuoi\chan-tinh-2.jpg" />
+    <Content Include="Images\hoa cuoi\chan-tinh-hty1-300x300.jpg" />
+    <Content Include="Images\hoa cuoi\dam-me1-300x300.jpg" />
+    <Content Include="Images\hoa cuoi\giac-mo-lang-man-300x300.jpg" />
+    <Content Include="Images\hoa cuoi\hop-qua-trai-tim2-300x300.jpg" />
+    <Content Include="Images\hoa cuoi\khuc-khai-hoan-hty1-300x300.jpg" />
+    <Content Include="Images\hoa cuoi\special-love-hty-300x300.jpg" />
+    <Content Include="Images\hoa khai truong\hoa-mung-khai-truong-300x300.jpg" />
+    <Content Include="Images\hoa sinh nhat\em dem.jpg" />
+    <Content Include="Images\hoa sinh nhat\california.jpg" />
+    <Content Include="Images\hoa sinh nhat\dieu ngot.jpg" />
+    <Content Include="Images\hoa sinh nhat\nu hong tho ngay.jpg" />
+    <Content Include="Images\hoa sinh nhat\ngay cua em.jpg" />
+    <Content Include="Images\hoa sinh nhat\duy nhat.jpg" />
+    <Content Include="Images\hoa sinh nhat\chan tinh.jpg" />
+    <Content Include="Images\hoa sinh nhat\coi mo.jpg" />
+    <Content Include="Images\hoa tang me\hoa 3.jpg" />
+    <Content Include="Images\hoa tang me\hoa 6.jpg" />
+    <Content Include="Images\hoa tang me\hoa 1.jpg" />
+    <Content Include="Images\hoa tang me\hoa 2.jpg" />
+    <Content Include="Images\hoa tang me\hoa 5.jpg" />
+    <Content Include="Images\hoa tang me\hoa 4.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-trai-tim-300x300.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-trai-tim-do-300x300.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-tt9943-300x300.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-vuong-cham-bi-300x300.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-vuong-tru-g499-300x300.jpg" />
+    <Content Include="Images\hop qua tang\hop-qua-vuong-tru1-300x300.jpg" />
+    <Content Include="Images\logo\back-top.png" />
+    <Content Include="Images\logo\background_title.png" />
+    <Content Include="Images\logo\banner_module.png" />
+    <Content Include="Images\logo\brand1.png" />
+    <Content Include="Images\logo\brand2.png" />
+    <Content Include="Images\logo\brand3.png" />
+    <Content Include="Images\logo\brand4.png" />
+    <Content Include="Images\logo\bullet.png" />
+    <Content Include="Images\logo\loading.gif" />
+    <Content Include="Images\logo\logo.png" />
+    <Content Include="Images\logo\logo_footer.png" />
+    <Content Include="Images\logo\people_footer.png" />
+    <Content Include="Images\san pham giam gia\hoa 4.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 8.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 1.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 7.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 5.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 6.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 2.jpg" />
+    <Content Include="Images\san pham giam gia\hoa 3.jpg" />
+    <Content Include="Images\san pham khac\hoa 2.jpg" />
+    <Content Include="Images\san pham khac\hoa 4.jpg" />
+    <Content Include="Images\san pham khac\hoa 1.jpg" />
+    <Content Include="Images\san pham khac\hoa 3.jpg" />
+    <Content Include="Images\hinh-nen-hoa-may-tinh-hoa-hong.jpg" />
+    <Content Include="Images\slider\slider_1.jpg" />
+    <Content Include="Images\slider\slider_2.jpg" />
+    <Content Include="Images\slider\slider_3.jpg" />
+    <Content Include="hoacuoi.html" />
+    <Content Include="Contact.html" />
+    <Content Include="hoatuoi.html" />
+    <Content Include="hoatuoi page1.html" />
+    <Content Include="hoatuoi page2.html" />
+    <Content Include="chantinh2.html" />
+    <Content Include="list3.html" />
+    <Content Include="list2.html" />
+    <Content Include="Plugins\easyZoom\easyzoom.css" />
+    <Content Include="Plugins\easyZoom\easyzoom.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\css3-animate-it.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="list.html" />
+    <Content Include="introduce.html" />
+    <Content Include="index.html" />
+    <Content Include="Plugins\fancybox\jquery.fancybox.css" />
+    <Content Include="Plugins\fancybox\jquery.fancybox.js" />
+    <Content Include="Plugins\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Plugins\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Plugins\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Plugins\owlcarousel\owl.carousel.js" />
+    <Content Include="Plugins\swiper\swiper.css" />
+    <Content Include="Plugins\swiper\swiper.js" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Scripts\script.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60835</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60835/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
